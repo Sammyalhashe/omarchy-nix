@@ -18,7 +18,7 @@ in
   ];
   wayland.windowManager.hyprland.settings = {
     # Default applications
-    "$terminal" = lib.mkDefault "wezterm";
+    "$terminal" = lib.mkDefault "ghostty";
     "$fileManager" = lib.mkDefault "nautilus --new-window";
     "$browser" = lib.mkDefault "brave --new-window --ozone-platform=wayland";
     "$music" = lib.mkDefault "spotify";
