@@ -25,7 +25,7 @@ in
     "$passwordManager" = lib.mkDefault "1password";
     "$messenger" = lib.mkDefault "signal-desktop";
     "$webapp" = lib.mkDefault "$browser --app";
-    "$email" = lib.mkDefault "thunderbird"
+    "$email" = lib.mkDefault "thunderbird";
 
     monitor = cfg.monitors;
   };
