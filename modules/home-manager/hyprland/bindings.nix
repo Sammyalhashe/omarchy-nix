@@ -22,7 +22,7 @@ in {
         "SUPER SHIFT, ESCAPE, exit,"
         "SUPER CTRL, ESCAPE, exec, reboot"
         "SUPER SHIFT CTRL, ESCAPE, exec, systemctl poweroff"
-        "SUPER, K, exec, ~/.local/share/omarchy/bin/omarchy-show-keybindings"
+        "SUPER CTRL, K, exec, ~/.local/share/omarchy/bin/omarchy-show-keybindings"
 
         # Control tiling
         "SUPER, J, togglesplit, # dwindle"
@@ -35,6 +35,10 @@ in {
         "SUPER, right, movefocus, r"
         "SUPER, up, movefocus, u"
         "SUPER, down, movefocus, d"
+        "SUPER, L, movefocus, l"
+        "SUPER, H, movefocus, r"
+        "SUPER, K, movefocus, u"
+        "SUPER, J, movefocus, d"
 
         # Switch workspaces with mainMod + [0-9]
         "SUPER, 1, workspace, 1"
