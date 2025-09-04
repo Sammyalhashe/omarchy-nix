@@ -3,9 +3,11 @@
   pkgs,
   lib,
   ...
-}: let
+}:
+let
   cfg = config.omarchy;
-in {
+in
+{
   imports = [
     ./autostart.nix
     ./bindings.nix
@@ -16,13 +18,14 @@ in {
   ];
   wayland.windowManager.hyprland.settings = {
     # Default applications
-    "$terminal" = lib.mkDefault "ghostty";
+    "$terminal" = lib.mkDefault "wezterm";
     "$fileManager" = lib.mkDefault "nautilus --new-window";
-    "$browser" = lib.mkDefault "chromium --new-window --ozone-platform=wayland";
+    "$browser" = lib.mkDefault "brave --new-window --ozone-platform=wayland";
     "$music" = lib.mkDefault "spotify";
     "$passwordManager" = lib.mkDefault "1password";
     "$messenger" = lib.mkDefault "signal-desktop";
     "$webapp" = lib.mkDefault "$browser --app";
+    "$email" = lib.mkDefault "thunderbird"
 
     monitor = cfg.monitors;
   };
