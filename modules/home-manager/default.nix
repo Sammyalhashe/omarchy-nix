@@ -60,5 +60,5 @@ in {
   };
 
   # TODO: Add an actual nvim config
-  programs.neovim.enable = true;
+  # programs.neovim.enable = true;
 }
