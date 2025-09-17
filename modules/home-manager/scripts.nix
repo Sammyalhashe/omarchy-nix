@@ -1,9 +1,7 @@
 # {
 #   browser ? "brave --new-window --ozone-platform=wayland",
 # }:
-inputs:
 {
-  config,
   pkgs,
   ...
 }:

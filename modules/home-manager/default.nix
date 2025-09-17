@@ -47,7 +47,6 @@ in
     (import ./wofi.nix)
     (import ./zoxide.nix)
     (import ./zsh.nix)
-    (import ./scripts.nix inputs)
   ];
 
   home.file = {
@@ -56,7 +55,9 @@ in
       recursive = true;
     };
   };
-  home.packages = packages.homePackages;
+  home.packages = packages.homePackages ++ [
+    (import ./scripts.nix { inherit pkgs; })
+  ];
 
   colorScheme =
     if (config.omarchy.theme == "generated_light" || config.omarchy.theme == "generated_dark") then
