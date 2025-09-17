@@ -1,7 +1,12 @@
 # {
 #   browser ? "brave --new-window --ozone-platform=wayland",
 # }:
-{ pkgs, ... }:
+inputs:
+{
+  config,
+  pkgs,
+  ...
+}:
 let
   BOOKMARKS = ''
     [coding] https://github.com/Sammyalhashe

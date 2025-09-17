@@ -47,7 +47,7 @@ in
     (import ./wofi.nix)
     (import ./zoxide.nix)
     (import ./zsh.nix)
-    (import ./scripts.nix pkgs)
+    (import ./scripts.nix inputs)
   ];
 
   home.file = {
