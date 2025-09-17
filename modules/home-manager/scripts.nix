@@ -7,8 +7,10 @@
 }:
 let
   BOOKMARKS = ''
+    """
     [coding] https://github.com/Sammyalhashe
     [crypto] https://matcha.xyz
+    """
   '';
 in
 pkgs.writeShellScriptBin "wofi-bookmark" ''
