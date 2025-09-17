@@ -106,6 +106,9 @@ in
 
       # Clipse
       "CTRL SUPER, V, exec, ghostty --class clipse -e clipse"
+
+      # Custom scripts
+      "SUPER CTRL, B, exec, wofi-bookmark $browser"
     ];
 
     bindm = [
