@@ -6,15 +6,10 @@
   ...
 }:
 let
-  BOOKMARKS = ''
-    """
-    [coding] https://github.com/Sammyalhashe
-    [crypto] https://matcha.xyz
-    """
-  '';
+  BOOKMARKS = "~/.bookmarks";
 in
 pkgs.writeShellScriptBin "wofi-bookmark" ''
-  let chosen=`echo ${BOOKMARKS} | wofi --show=dmenu | awk '{ print $2 }'`
+  let chosen=`cat ${BOOKMARKS} | wofi --show=dmenu | awk '{ print $2 }'`
 
   if [[ ! $chosen ]]; then
     return
