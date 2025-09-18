@@ -74,7 +74,7 @@ lib: {
         "SUPER, T, exec, $terminal -e btop"
         "SUPER, D, exec, $terminal -e lazydocker"
         "SUPER, G, exec, $messenger"
-        "SUPER, O, exec, obsidian -disable-gpu"
+        "SUPER, O, exec, anytype"
         "SUPER, slash, exec, $passwordManager"
       ];
     };
