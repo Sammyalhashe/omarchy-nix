@@ -35,8 +35,8 @@ in
       "SUPER, right, movefocus, r"
       "SUPER, up, movefocus, u"
       "SUPER, down, movefocus, d"
-      "SUPER, L, movefocus, l"
-      "SUPER, H, movefocus, r"
+      "SUPER, L, movefocus, r"
+      "SUPER, H, movefocus, l"
       "SUPER, K, movefocus, u"
       "SUPER, J, movefocus, d"
 
