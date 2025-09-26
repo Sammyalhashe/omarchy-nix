@@ -2,8 +2,7 @@
 
 Omarchy-nix (Omanix?) is an opinionated NixOS flake to help you get started as fast as possible with NixOS and Hyprland. It is primarily a reimplementation of [DHH's Omarchy](https://github.com/basecamp/omarchy) project - an opinionated Arch/Hyprland setup for modern web development.
 
-This was mostly spun up in a weekend so if you have any issues please let me know, my goal is to eventually make this as seamless an install experience as Omarchy itself!
-
+This isn't meant to be full feature parity with Omarchy and likely never will be, especially with how fast the feature development and funding has been for that project. Instead, think of this as more of a launch pad to get your own similar Nix config set up!
 
 ## Quick Start
 
