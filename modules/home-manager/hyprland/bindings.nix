@@ -109,7 +109,7 @@ in
 
       # Custom scripts
       "SUPER CTRL, B, exec, wofi-bookmark $browser"
-      "SUPER, \, exec, wofi-search-browser"
+      "SUPER, \\, exec, wofi-search-browser"
     ];
 
     bindm = [
