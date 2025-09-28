@@ -59,7 +59,6 @@ lib: {
       default = [
         "SUPER, A, exec, $webapp=https://chatgpt.com"
         "SUPER SHIFT, A, exec, $webapp=https://grok.com"
-        "SUPER, C, exec, $webapp=https://app.hey.com/calendar/weeks/"
         "SUPER, E, exec, $thunderbird"
         "SUPER, Y, exec, $webapp=https://youtube.com/"
         "SUPER SHIFT, G, exec, $webapp=https://web.whatsapp.com/"

@@ -28,6 +28,7 @@ in
       "SUPER SHIFT, J, togglesplit, # dwindle"
       "SUPER, P, pseudo, # dwindle"
       "SUPER, V, togglefloating,"
+      "SUPER, C, togglefloating, centerwindow"
       "SUPER SHIFT, return, fullscreen,"
 
       # Move focus with mainMod + arrow keys
