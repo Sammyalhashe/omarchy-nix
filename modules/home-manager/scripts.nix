@@ -26,7 +26,7 @@ in
 
     # url encode function (requires jq)
     urlencode() {
-        printf '%s' "$1" | jq -srr @uri
+        printf '%s' "$1" | jq -sRr @uri
     }
 
     if [[ $query == !* ]]; then
