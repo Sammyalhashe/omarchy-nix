@@ -55,9 +55,13 @@ in
       recursive = true;
     };
   };
-  home.packages = packages.homePackages ++ [
-    (import ./scripts.nix { inherit pkgs; })
-  ];
+
+  # home.packages = packages.homePackages ++ [
+  #   (import ./scripts.nix { inherit pkgs; })
+  # ];
+
+  home.packages =
+    packages.homePackages ++ pkgs.lib.attrValues (import ./scripts.nix { inherit pkgs; });
 
   colorScheme =
     if (config.omarchy.theme == "generated_light" || config.omarchy.theme == "generated_dark") then
