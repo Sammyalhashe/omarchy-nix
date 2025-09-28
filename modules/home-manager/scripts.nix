@@ -8,7 +8,10 @@
 let
   BOOKMARKS = "~/.bookmarks";
 in
-pkgs.writeShellScriptBin "wofi-bookmark"
+[
+
+  pkgs.writeShellScriptBin
+  "wofi-bookmark"
   ''
     chosen=`cat ${BOOKMARKS} | wofi --show=dmenu | awk '{ print $2 }'`
 
@@ -55,3 +58,4 @@ pkgs.writeShellScriptBin "wofi-bookmark"
         brave "$search_url" &
     fi
   ''
+]
