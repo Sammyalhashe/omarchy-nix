@@ -18,6 +18,7 @@ in
   '';
 
   wofi-search-browser = pkgs.writeShellScriptBin "wofi-search-browser" ''
+
     # prompt for search query
     query=$(wofi --dmenu --prompt "brave search:")
 
@@ -30,8 +31,9 @@ in
     }
 
     if [[ $query == !* ]]; then
-        prefix="${"query:1:1"}"
-        rest="${"query:2"}"
+        # turns out this is how you escape in nix
+        prefix="''${query:1:1}"
+        rest="''${query:2}"
         rest_trimmed="$(echo "$rest" | sed 's/^ *//')"
         case "$prefix" in
             g) search_url="https://www.google.com/search?q=$(urlencode "$rest_trimmed")" ;;
