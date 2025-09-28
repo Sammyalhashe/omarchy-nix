@@ -1,6 +1,3 @@
-# {
-#   browser ? "brave --new-window --ozone-platform=wayland",
-# }:
 {
   pkgs,
   ...
@@ -8,11 +5,9 @@
 let
   BOOKMARKS = "~/.bookmarks";
 in
-[
+{
 
-  pkgs.writeShellScriptBin
-  "wofi-bookmark"
-  ''
+  wofi-bookmark = pkgs.writeShellScriptBin "wofi-bookmark" ''
     chosen=`cat ${BOOKMARKS} | wofi --show=dmenu | awk '{ print $2 }'`
 
     if [[ ! $chosen ]]; then
@@ -20,11 +15,9 @@ in
     fi
 
     exec "$1" $chosen
-  ''
+  '';
 
-  pkgs.writeShellScriptBin
-  "wofi-search-browser"
-  ''
+  wofi-search-browser = pkgs.writeShellScriptBin "wofi-search-browser" ''
     # prompt for search query
     query=$(wofi --dmenu --prompt "brave search:")
 
@@ -57,5 +50,5 @@ in
     else
         brave "$search_url" &
     fi
-  ''
-]
+  '';
+}
