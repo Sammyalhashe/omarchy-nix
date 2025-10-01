@@ -25,7 +25,7 @@ in
       "SUPER CTRL, K, exec, ~/.local/share/omarchy/bin/omarchy-show-keybindings"
 
       # Control tiling
-      "SUPER SHIFT, J, togglesplit, # dwindle"
+      "SUPER SHIFT, N, togglesplit, # dwindle"
       "SUPER, P, pseudo, # dwindle"
       "SUPER, V, togglefloating,"
       "SUPER, C, exec, hyprctl dispatch togglefloating; hyprctl dispatch centerwindow"
@@ -40,6 +40,12 @@ in
       "SUPER, H, movefocus, l"
       "SUPER, K, movefocus, u"
       "SUPER, J, movefocus, d"
+
+      # swapwindow bindings
+      "SUPER SHIFT, L, swapwindow, l"
+      "SUPER SHIFT, H, swapwindow, r"
+      "SUPER SHIFT, K, swapwindow, u"
+      "SUPER SHIFT, J, swapwindow, d"
 
       # Switch workspaces with mainMod + [0-9]
       "SUPER, 1, workspace, 1"
@@ -67,35 +73,6 @@ in
       "SUPER SHIFT, 8, movetoworkspace, 8"
       "SUPER SHIFT, 9, movetoworkspace, 9"
       "SUPER SHIFT, 0, movetoworkspace, 10"
-
-      # Swap active window with the one next to it with mainMod + SHIFT + arrow keys
-      "SUPER SHIFT, left, swapwindow, l"
-      "SUPER SHIFT, right, swapwindow, r"
-      "SUPER SHIFT, up, swapwindow, u"
-      "SUPER SHIFT, down, swapwindow, d"
-      "SUPER SHIFT, L, swapwindow, l"
-      "SUPER SHIFT, H, swapwindow, r"
-      "SUPER SHIFT, K, swapwindow, u"
-      "SUPER SHIFT, J, swapwindow, d"
-
-      # Resize active window
-      "SUPER, minus, resizeactive, -100 0"
-      "SUPER, equal, resizeactive, 100 0"
-      "SUPER SHIFT, minus, resizeactive, 0 -100"
-      "SUPER SHIFT, equal, resizeactive, 0 100"
-
-      # Scroll through existing workspaces with mainMod + scroll
-      "SUPER, mouse_down, workspace, e+1"
-      "SUPER, mouse_up, workspace, e-1"
-
-      # Control Apple Display brightness
-      "CTRL, F1, exec, ~/.local/share/omarchy/bin/apple-display-brightness -5000"
-      "CTRL, F2, exec, ~/.local/share/omarchy/bin/apple-display-brightness +5000"
-      "SHIFT CTRL, F2, exec, ~/.local/share/omarchy/bin/apple-display-brightness +60000"
-
-      # Super workspace floating layer
-      "SUPER, S, togglespecialworkspace, magic"
-      "SUPER SHIFT, S, movetoworkspace, special:magic"
 
       # Screenshots
       ", PRINT, exec, hyprshot -m region"

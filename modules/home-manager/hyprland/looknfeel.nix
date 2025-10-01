@@ -2,13 +2,18 @@
   config,
   pkgs,
   ...
-}: let
-  hexToRgba = hex: alpha: let
-  in "rgba(${hex}${alpha})";
+}:
+let
+  hexToRgba =
+    hex: alpha:
+    let
+    in
+    "rgba(${hex}${alpha})";
 
   inactiveBorder = hexToRgba config.colorScheme.palette.base09 "aa";
   activeBorder = hexToRgba config.colorScheme.palette.base0D "aa";
-in {
+in
+{
   wayland.windowManager.hyprland.settings = {
     general = {
       gaps_in = 5;
@@ -60,9 +65,11 @@ in {
       animation = [
         "global, 1, 10, default"
         "border, 1, 5.39, easeOutQuint"
-        "windows, 1, 4.79, easeOutQuint"
+        # "windows, 1, 4.79, easeOutQuint"
+        "windows, 1, 7, myBezier"
+        "windowsOut, 1, 7, default, popin 80%"
         "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
-        "windowsOut, 1, 1.49, linear, popin 87%"
+        # "windowsOut, 1, 1.49, linear, popin 87%"
         "fadeIn, 1, 1.73, almostLinear"
         "fadeOut, 1, 1.46, almostLinear"
         "fade, 1, 3.03, quick"
