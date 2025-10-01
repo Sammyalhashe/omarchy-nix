@@ -24,6 +24,12 @@ in
       "SUPER SHIFT CTRL, ESCAPE, exec, systemctl poweroff"
       "SUPER CTRL, K, exec, ~/.local/share/omarchy/bin/omarchy-show-keybindings"
 
+      # Tab groups
+      "SUPER, G, togglegroup"
+      "SUPER, TAB, changegroupactive, f"
+      "SUPER SHIFT, TAB, changegroupactive, b"
+      "SUPER SHIFT, G, moveoutofgroup"
+
       # Control tiling
       "SUPER SHIFT, N, togglesplit, # dwindle"
       "SUPER, P, pseudo, # dwindle"
