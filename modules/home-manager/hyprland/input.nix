@@ -3,7 +3,8 @@
   lib,
   pkgs,
   ...
-}: {
+}:
+{
   wayland.windowManager.hyprland.settings = {
     # Environment variables
     # https://wiki.hyprland.org/Configuring/Variables/#input
@@ -25,8 +26,9 @@
     };
 
     # https://wiki.hyprland.org/Configuring/Variables/#gestures
-    gestures = lib.mkDefault {
-      workspace_swipe = false;
-    };
+    # NOTE: Checking the page this seems to not exist anymore?
+    # gestures = lib.mkDefault {
+    #   workspace_swipe = false;
+    # };
   };
 }
