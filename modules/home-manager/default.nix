@@ -70,7 +70,7 @@ in
       inputs.nix-colors.colorSchemes.${selectedTheme.base16-theme};
 
   gtk = {
-    enable = true;
+    enable = false;
     theme = {
       name = if config.omarchy.theme == "generated_light" then "Adwaita" else "Adwaita:dark";
       package = pkgs.gnome-themes-extra;

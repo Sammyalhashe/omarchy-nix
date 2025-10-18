@@ -17,8 +17,6 @@ in
       recursive = true;
     };
     # NOTE: Removing nix-colors styling for waybar for stylix
-    # ".config/waybar/theme.css" = {
-    #   text = ''
     #     @define-color background ${backgroundRgb};
     #     * {
     #       color: ${foregroundRgb};
@@ -27,8 +25,9 @@ in
     #     window#waybar {
     #       background-color: ${backgroundRgb};
     #     }
-    #   '';
-    # };
+    ".config/waybar/theme.css" = {
+      text = '''';
+    };
   };
 
   programs.waybar = {

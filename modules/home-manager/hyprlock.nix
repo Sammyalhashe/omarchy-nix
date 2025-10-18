@@ -1,9 +1,11 @@
-inputs: {
+inputs:
+{
   config,
   pkgs,
   lib,
   ...
-}: let
+}:
+let
   palette = config.colorScheme.palette;
   convert = inputs.nix-colors.lib.conversions.hexToRGBString;
   selected_wallpaper_path = (import ../../lib/selected-wallpaper.nix config).wallpaper_path;
@@ -12,7 +14,8 @@ inputs: {
   surfaceRgb = "rgb(${convert ", " palette.base02})";
   foregroundRgb = "rgb(${convert ", " palette.base05})";
   foregroundMutedRgb = "rgb(${convert ", " palette.base04})";
-in {
+in
+{
   programs.hyprlock = {
     enable = true;
     settings = {
@@ -37,15 +40,15 @@ in {
         halign = "center";
         valign = "center";
 
-        inner_color = surfaceRgb;
-        outer_color = foregroundRgb; # #d3c6aa
+        # inner_color = surfaceRgb;
+        # outer_color = foregroundRgb; # #d3c6aa
         outline_thickness = 4;
 
         font_family = "CaskaydiaMono Nerd Font";
         font_size = 32;
-        font_color = foregroundRgb;
+        # font_color = foregroundRgb;
 
-        placeholder_color = foregroundMutedRgb;
+        # placeholder_color = foregroundMutedRgb;
         placeholder_text = "  Enter Password 󰈷 ";
         check_color = "rgba(131, 192, 146, 1.0)";
         fail_text = "Wrong";
