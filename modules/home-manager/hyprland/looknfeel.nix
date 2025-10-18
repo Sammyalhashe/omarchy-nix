@@ -40,7 +40,8 @@ in
         range = 30;
         render_power = 3;
         ignore_window = true;
-        color = "rgba(00000045)";
+        # NOTE: Commenting out for stylix in my config
+        # color = "rgba(00000045)";
       };
 
       blur = {
