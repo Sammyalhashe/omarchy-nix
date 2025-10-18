@@ -21,8 +21,9 @@ in
 
       border_size = 2;
 
-      "col.active_border" = activeBorder;
-      "col.inactive_border" = inactiveBorder;
+      # NOTE: commented out for stylix in my config
+      # "col.active_border" = activeBorder;
+      # "col.inactive_border" = inactiveBorder;
 
       resize_on_border = false;
 

@@ -2,7 +2,9 @@
   config,
   pkgs,
   ...
-}: {
+}:
+# NOTE: All colors are commented out below for stylix in my config
+{
   home.file = {
     ".config/wofi/style.css" = {
       text = ''
@@ -14,7 +16,7 @@
         window {
           margin: 0px;
           padding: 20px;
-          background-color: #${config.colorScheme.palette.base00};
+          /* background-color: #${config.colorScheme.palette.base00}; */
           opacity: 0.95;
         }
 
@@ -22,28 +24,28 @@
           margin: 0;
           padding: 0;
           border: none;
-          background-color: #${config.colorScheme.palette.base00};
+          /* background-color: #${config.colorScheme.palette.base00}; */
         }
 
         #outer-box {
           margin: 0;
           padding: 20px;
           border: none;
-          background-color: #${config.colorScheme.palette.base00};
+          /* background-color: #${config.colorScheme.palette.base00}; */
         }
 
         #scroll {
           margin: 0;
           padding: 0;
           border: none;
-          background-color: #${config.colorScheme.palette.base00};
+          /* background-color: #${config.colorScheme.palette.base00}; */
         }
 
         #input {
           margin: 0;
           padding: 10px;
           border: none;
-          background-color: #${config.colorScheme.palette.base00};
+          /* background-color: #${config.colorScheme.palette.base00}; */
           color: @text;
         }
 
@@ -56,11 +58,11 @@
         #text {
           margin: 5px;
           border: none;
-          color: #${config.colorScheme.palette.base06};
+          /* color: #${config.colorScheme.palette.base06}; */
         }
 
         #entry {
-          background-color: #${config.colorScheme.palette.base00};
+          /* background-color: #${config.colorScheme.palette.base00}; */
         }
 
         #entry:selected {
@@ -69,7 +71,7 @@
         }
 
         #entry:selected #text {
-          color: #${config.colorScheme.palette.base02};
+          /* color: #${config.colorScheme.palette.base02}; */
         }
 
         #entry image {

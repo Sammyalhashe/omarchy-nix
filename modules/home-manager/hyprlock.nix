@@ -40,14 +40,17 @@ in
         halign = "center";
         valign = "center";
 
+        # NOTE: Commented out for stylix
         # inner_color = surfaceRgb;
         # outer_color = foregroundRgb; # #d3c6aa
         outline_thickness = 4;
 
         font_family = "CaskaydiaMono Nerd Font";
         font_size = 32;
+        # NOTE: Commented out for stylix
         # font_color = foregroundRgb;
 
+        # NOTE: Commented out for stylix
         # placeholder_color = foregroundMutedRgb;
         placeholder_text = "  Enter Password 󰈷 ";
         check_color = "rgba(131, 192, 146, 1.0)";
