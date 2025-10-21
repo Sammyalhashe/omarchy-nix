@@ -29,7 +29,15 @@ in
 
       allow_tearing = false;
 
-      layout = "dwindle";
+      # layout = "dwindle";
+      layout = "scrolling";
+    };
+
+    plugin = {
+      hyprscrolling = {
+        column_width = 0.5;
+        fullscreen_on_one_column = false;
+      };
     };
 
     decoration = {

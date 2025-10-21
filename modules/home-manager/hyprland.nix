@@ -9,12 +9,9 @@ inputs:
   wayland.windowManager.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
-    pkgs.hyprlandPlugins.hyprscrolling = {
-      settings = {
-        column_width = 0.5;
-        fullscreen_on_one_column = false;
-      };
-    };
+    plugins = [
+      pkgs.hyprlandPlugins.hyprscrolling
+    ];
   };
   services.hyprpolkitagent.enable = true;
 }
