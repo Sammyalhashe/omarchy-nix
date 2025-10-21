@@ -10,7 +10,7 @@ inputs:
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     plugins = [
-      pkgs.hyprlandPlugins.hyprscrolling
+      inputs.hyprland-plugins.packages.${pkgs.system}.hyprscrolling
     ];
   };
   services.hyprpolkitagent.enable = true;

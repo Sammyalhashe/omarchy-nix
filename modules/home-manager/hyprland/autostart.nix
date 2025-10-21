@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   wayland.windowManager.hyprland.settings = {
     exec-once = [
       # "hypridle & mako & waybar & fcitx5"
@@ -13,6 +14,9 @@
       "wl-clip-persist --clipboard regular & clipse -listen"
 
       # "dropbox-cli start"  # Uncomment to run Dropbox
+
+      # hyprland-plugins
+      "hyprctl plugin load \"$HYPR_PLUGIN_DIR/lib/libhyprexpo.so\""
     ];
 
     exec = [
