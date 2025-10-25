@@ -1,12 +1,17 @@
-{config, ...}: let
+{ config, ... }:
+let
   cfg = config.omarchy;
-in {
+in
+{
   programs.git = {
     enable = true;
-    userName = cfg.full_name;
-    userEmail = cfg.email_address;
-    extraConfig = {
+    settings = {
+
       credential.helper = "store";
+      user = {
+        name = cfg.full_name;
+        email = cfg.full_name;
+      };
     };
   };
 
