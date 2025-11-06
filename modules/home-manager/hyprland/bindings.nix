@@ -120,6 +120,9 @@ in
       # Clipse
       "CTRL SUPER, V, exec, ghostty --class clipse -e clipse"
 
+      # plugin bindings
+      "SHUPER SHIFT, \, hyprexpo:expo, toggle"
+
       # Custom scripts
       "SUPER CTRL, B, exec, wofi-bookmark $browser"
       "SUPER, backslash, exec, wofi-search-browser"

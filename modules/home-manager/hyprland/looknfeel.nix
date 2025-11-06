@@ -38,6 +38,9 @@ in
         column_width = 0.5;
         fullscreen_on_one_column = false;
       };
+      hyprexpo = {
+
+      };
     };
 
     decoration = {
