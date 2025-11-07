@@ -16,7 +16,7 @@
       # "dropbox-cli start"  # Uncomment to run Dropbox
 
       # hyprland-plugins
-      "hyprctl plugin load \"$HYPR_PLUGIN_DIR/lib/libhyprexpo.so\""
+      # "hyprctl plugin load \"$HYPR_PLUGIN_DIR/lib/libhyprexpo.so\""
     ];
 
     exec = [

@@ -39,7 +39,10 @@ in
         fullscreen_on_one_column = false;
       };
       hyprexpo = {
-
+        columns = 3;
+        gap_size = 8;
+        bg_col = "rgb(111111)";
+        workspace_method = "center current";
       };
     };
 
