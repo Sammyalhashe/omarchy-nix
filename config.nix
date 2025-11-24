@@ -57,7 +57,7 @@ lib: {
       type = lib.types.listOf lib.types.str;
       description = "A list of single keystroke key bindings to launch common apps.";
       default = [
-        "SUPER, A, exec, $webapp=https://chatgpt.com"
+        "SUPER, A, exec, $webapp=https://perplexity.ai"
         "SUPER SHIFT, A, exec, $webapp=https://grok.com"
         "SUPER, E, exec, $thunderbird"
         "SUPER, Y, exec, $webapp=https://youtube.com/"
