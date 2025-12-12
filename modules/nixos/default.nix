@@ -8,6 +8,7 @@ inputs: {
 in {
   imports = [
     (import ./hyprland.nix inputs)
+    (import ./mangowc.nix inputs)
     (import ./system.nix)
     (import ./1password.nix)
     (import ./containers.nix)

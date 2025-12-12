@@ -12,6 +12,10 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+    mangowc = {
+      url = "github:DreamMaoMao/mangowc";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     inputs@{
@@ -21,6 +25,7 @@
       nix-colors,
       home-manager,
       hyprland-plugins,
+      mangowc,
     }:
     {
       nixosModules = {
