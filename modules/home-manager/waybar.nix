@@ -39,7 +39,7 @@ in
         spacing = 0;
         height = 26;
         modules-left = [
-          "hyprland/workspaces"
+          (if config.omarchy.desktop.environment == "hyprland" then "hyprland/workspaces" else "wlr/taskbar")
         ];
         modules-center = [
           "clock"
@@ -77,6 +77,9 @@ in
             "4" = [ ];
             "5" = [ ];
           };
+        };
+        "wlr/taskbar" = {
+          on-click = "activate";
         };
         cpu = {
           interval = 5;

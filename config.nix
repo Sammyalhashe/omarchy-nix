@@ -82,5 +82,21 @@ lib: {
       default = [ ];
       description = "Packages to exclude from the default system packages";
     };
+    desktop = lib.mkOption {
+      type = lib.types.submodule {
+        options = {
+          environment = lib.mkOption {
+            type = lib.types.enum [
+              "hyprland"
+              "mangowc"
+            ];
+            default = "hyprland";
+            description = "The desktop environment to use";
+          };
+        };
+      };
+      default = { };
+      description = "Desktop environment configuration";
+    };
   };
 }

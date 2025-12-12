@@ -33,8 +33,9 @@ in
 {
   imports = [
     (import ./hyprland.nix inputs)
+    (import ./mangowc.nix inputs)
     (import ./hyprlock.nix inputs)
-    (import ./hyprpaper.nix)
+    (import ./wallpaper.nix)
     (import ./hypridle.nix)
     (import ./ghostty.nix)
     (import ./btop.nix)
