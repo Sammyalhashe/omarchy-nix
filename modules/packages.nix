@@ -62,10 +62,9 @@ let
       docker-compose
       ffmpeg
     ]
-    ++ lib.optionals (pkgs.system == "x86_64-linux") [
-      typora
-      dropbox
-      spotify
+    ++ lib.optionals (pkgs.stdenv.hostPlatform.system == "x86_64-linux") [
+      # App images
+      beeper
     ];
 
   # Only allow excluding discretionary packages to prevent breaking the system
