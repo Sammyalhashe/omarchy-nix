@@ -1,8 +1,12 @@
 {
   description = "Omarchy - Base configuration flake";
   inputs = {
+    systems.url = "github:nix-systems/default";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+      inputs.systems.follows = "systems";
+    };
     nix-colors.url = "github:misterio77/nix-colors";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -11,6 +15,7 @@
     hyprland-plugins = {
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
+      inputs.systems.follows = "systems";
     };
   };
   outputs =
@@ -21,6 +26,7 @@
       nix-colors,
       home-manager,
       hyprland-plugins,
+      systems,
     }:
     {
       nixosModules = {
