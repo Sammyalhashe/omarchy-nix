@@ -37,6 +37,7 @@ in
       hyprscrolling = {
         column_width = 0.5;
         fullscreen_on_one_column = false;
+        follow_focus = false;
       };
       hyprexpo = {
         columns = 3;
